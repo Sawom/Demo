@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+     <nav style="background-color: #FAEBD7;" class="navbar navbar-expand-lg navbar-light  nav-bg">
+            <div class="container">
+              <a class="navbar-brand" href="#"> <img src="images/logo.png" alt="" > </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                   <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Login</a>
+                   </li>
+                   <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="dashBoard.html">Dashboard</a>
+                   </li>
+                  <!-- dropdown -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Company
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="allCompanies.html">View all Company</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Guard
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="allGuard.html">View all Guard</a></li>
+                    </ul>
+                </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+    <br> <br> 
+    <h2 style="text-align:center" >Showing all guard</h2>
+    <section class="m-4" >
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Phone No</th>
+            <th scope="col">Photo</th>
+            <th scope="col"> Posting Company</th>
+            <th scope="col">Posting Sub Branch</th>
+            <th scope="col">Age</th>
+            <th scope="col">Salary Per Day in taka (8 hours)</th>
+            <th scope="col">Working Hour</th>
+            <th scope="col">Overtime (if any)</th>
+            <th scope="col">Total salary in taka (per day)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">101</th>
+            <td>Monir</td>
+            <td>102/3,mugda</td>
+            <td>01515-444444</td>
+            <td><img src="images/monir.jpg" alt="" height=100 width=100 /></td>
+            <td>Bata</td>
+            <td>Uttara</td>
+            <td>21</td>
+            <td>800</td>
+            <td>10</td>
+            <td>2</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <th scope="row">101</th>
+            <td>Monir</td>
+            <td>102/3,mugda</td>
+            <td>01515-666666</td>
+            <td><img src="images/jakir.jpg" alt="" height=100 width=100 /></td>
+            <td>Apex</td>
+            <td>Gazipur</td>
+            <td>21</td>
+            <td>800</td>
+            <td>12</td>
+            <td>4</td>
+            <td>1200</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="addGuard.html">
+          <button class="btn btn-primary"><i class="fa fa-plus"></i>  Add More guard</button>
+      </a>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
